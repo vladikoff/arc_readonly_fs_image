@@ -1,0 +1,136 @@
+# Copyright (C) 2014 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+# Key layout file for a PPAPI Keyboard
+
+# TODO(elijahtaylor): Finish filling this out, it is not 100% complete, but gets
+# most functionality we need to move forward.
+
+# See http://source.android.com/tech/input/key-layout-files.html for information
+# about this file format.
+
+# These integers are the scancodes we get from PPAPI,
+# which map to Windows Virtual-Key (VK) codes. See
+# http://msdn.microsoft.com/en-us/library/windows/desktop/dd375731(v=vs.85).aspx
+# for details.
+
+key 8     DEL
+key 9     TAB
+key 13    ENTER
+key 16    SHIFT_LEFT
+key 17    CTRL_LEFT
+key 18    ALT_LEFT
+key 27    ESCAPE
+key 32    SPACE
+key 33    PAGE_UP
+key 34    PAGE_DOWN
+key 35    MOVE_END
+key 36    MOVE_HOME
+key 37    DPAD_LEFT
+key 38    DPAD_UP
+key 39    DPAD_RIGHT
+key 40    DPAD_DOWN
+key 45    INSERT
+key 46    FORWARD_DEL
+
+key 48    0
+key 49    1
+key 50    2
+key 51    3
+key 52    4
+key 53    5
+key 54    6
+key 55    7
+key 56    8
+key 57    9
+key 65    A
+key 66    B
+key 67    C
+key 68    D
+key 69    E
+key 70    F
+key 71    G
+key 72    H
+key 73    I
+key 74    J
+key 75    K
+key 76    L
+key 77    M
+key 78    N
+key 79    O
+key 80    P
+key 81    Q
+key 82    R
+key 83    S
+key 84    T
+key 85    U
+key 86    V
+key 87    W
+key 88    X
+key 89    Y
+key 90    Z
+
+key 91    META_LEFT
+key 92    META_RIGHT
+
+key 96    NUMPAD_0
+key 97    NUMPAD_1
+key 98    NUMPAD_2
+key 99    NUMPAD_3
+key 100   NUMPAD_4
+key 101   NUMPAD_5
+key 102   NUMPAD_6
+key 103   NUMPAD_7
+key 104   NUMPAD_8
+key 105   NUMPAD_9
+key 106   NUMPAD_MULTIPLY
+key 107   NUMPAD_ADD
+key 109   NUMPAD_SUBTRACT
+key 110   NUMPAD_DOT
+key 111   NUMPAD_DIVIDE
+
+# TODO(yusukes): 1) Make this mapping Chrome OS only. 2) Map 112 back to F1 once
+# Chrome OS supports sending 166 when the left-arrow top-row key is pressed.
+key 112   BACK
+
+key 113   F2
+key 114   F3
+key 115   F4
+key 116   F5
+key 117   F6
+key 118   F7
+key 119   F8
+key 120   F9
+key 121   F10
+key 122   F11
+key 123   F12
+
+key 144   NUM_LOCK
+key 145   SCROLL_LOCK
+
+# TODO(yusukes): Remove VIRTUAL once the back button is moved to NavigationBar.
+key 166   BACK VIRTUAL
+
+key 186   SEMICOLON
+key 187   EQUALS
+key 188   COMMA
+key 189   MINUS
+key 190   PERIOD
+key 191   SLASH
+key 192   GRAVE
+
+key 219   LEFT_BRACKET
+key 220   BACKSLASH
+key 221   RIGHT_BRACKET
+key 222   APOSTROPHE

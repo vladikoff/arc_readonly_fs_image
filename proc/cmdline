@@ -1,0 +1,1 @@
+qemu.gles=0 qemu=1 console=ttyS0 android.qemud=ttyS1 android.checkjni=1 ndns=3
